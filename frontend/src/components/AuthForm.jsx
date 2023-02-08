@@ -36,11 +36,11 @@ const AuthForm = () => {
         {data && data.message && <p>{data.message}</p>}
         <p>
           <label htmlFor="email">Email</label>
-          <input id="email" type="email" name="email" required />
+          <input id="email" type="email" name="email" required placeholder="info@auth.com" />
         </p>
         <p>
           <label htmlFor="password">Password</label>
-          <input id="password" type="password" name="password" required />
+          <input id="password" type="password" name="password" required placeholder="Min 7 Character" />
         </p>
         <div className={styles.actions}>
           {/* <button onClick={switchAuthHandler} type="button">
